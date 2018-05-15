@@ -2,3 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 body{font-family: 'Roboto Slab', serif;}
+a,
+a:hover,
+.btn,
+.btn:hover {transition: all 0.25s ease; -webkit-transition: all 0.25s ease; -moz-transition: all 0.25s ease; -ms-transition: all 0.25s ease;}
