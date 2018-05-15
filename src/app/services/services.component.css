@@ -1,6 +1,7 @@
 .services {background-color: #f5f6fa; padding: 50px 0;}
 .servive-block {cursor: pointer;}
 .servive-block .service-icon { width: 100px; height: 100px; border: 2px solid #e8e9ee; border-radius: 50%; color: #EBAB49; font-size: 34px; line-height: 100px; margin: 0 auto 20px;;}
-.servive-block:hover .service-icon {border: 2px solid #EBAB49; background-color: #EBAB49; color: #fff;}
+.servive-block:hover .service-icon {border: 2px solid #EBAB49; background-color: #EBAB49; color: #fff;
+    transition: all 0.25s ease; -webkit-transition: all 0.25s ease; -moz-transition: all 0.25s ease; -ms-transition: all 0.25s ease;}
 .servive-block h3 {color: #38342a; font-size: 28px; font-weight: 400;}
 .servive-block p {color: #74757f; font-weight: 300; padding-top: 20px;}

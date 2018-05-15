@@ -1,0 +1,12 @@
+.price-sec {padding: 50px 0; text-align: center;}
+.price-block { border: 1px solid #aeb1be; display: flex; border-radius: 6px;}
+.pricing-modern-rating li {display: inline; font-size: 20px; color: aqua; padding: 0 5px;}
+.pricing-modern {padding: 50px 20px; border-right: 1px solid #aeb1be; max-width: 25%; flex-wrap: wrap; width: 100%;}
+.pricing-modern:last-child {border: none;}
+.pricing-modern-title {font-size: 20px; font-weight: 700; color: #38342a;}
+.pricing-modern-table {display: inline;}
+.pricing-modern-table td { padding: 3px 8px; color: #74757f;}
+.pricing-modern-table td:last-child {text-align: left;}
+.pricing-modern-table td:first-child {text-align: right;}
+.pricing-modern-price {margin-top: 40px; color: #74757f; font-size: 36px; font-weight: 300;}
+.pricing-modern-price  span {font-size: 28px; vertical-align: top;}

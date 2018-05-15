@@ -1,4 +1,4 @@
 .banner {min-height: 700px;background-image: url("/assets/images/banner.jpg");  background-position: top right; background-repeat: no-repeat; background-size: cover;}
-.banner-content {position: absolute; top: 50%; transform: translateY(-50%);}
-.banner-content h1 {font-size: 42px; font-weight: 400; text-transform: uppercase; color: #fff;}
+.banner-content {position: absolute; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%);}
+.banner-content h1 {font-size: 42px; font-weight: 700; text-transform: uppercase; color: #fff;}
 .banner-content p {color: #fff; font-weight: 300; font-size: 20px; padding: 10px 0 30px;}
