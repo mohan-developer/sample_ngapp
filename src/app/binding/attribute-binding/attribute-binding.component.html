@@ -1,0 +1,13 @@
+<div class="attribute-binding">
+  <h2 class="text-center text-black-50 mb-2">Attribute Binding</h2>
+  <p class="text-center pb-3">Attribute binding syntax resembles property binding. Instead of an element property between brackets, start with the prefix attr, followed by a dot (.) and the name of the attribute. You then set the attribute value, using an expression that resolves to a string.</p>
+  <table border="1" [style.margin]="'0 auto'">
+    <tr>
+      <td [attr.colspan]="1 + 1">One-Two</td>
+    </tr>
+    <tr>
+      <td>Five</td>
+      <td>Six</td>
+    </tr>
+  </table>
+</div>

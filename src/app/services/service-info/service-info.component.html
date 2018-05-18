@@ -3,8 +3,15 @@
       <div class="col-sm-6">
         <img src="assets/images/custom-service.jpg" alt="">
       </div>
-      <div class="col-sm-6">
-        <h2>Frequently Asked Questions</h2>
+      <div class="col-sm-6 pl-5">
+        <h2 class="mt-5 pt-5">Frequently Asked Questions</h2>
+        <h3>Welcome to {{ Name }} <br>Currency {{ (newtext*67.5).toFixed(2) }}</h3>
+        <button class="btn btn-primary my-2" (click) = "BtnEvent('Node')">Click Node.!</button>
+        <button class="btn btn-primary my-2 mx-3" (click) = "BtnEvent('Angular')">Click Angular.!</button>
+        <button class="btn btn-primary my-2" (click) = "BtnEvent('React')">Click React.!</button>
+        
+        <input type="text" id="" (input) = 'addevent($event)'><br><br>
+        <input type="text" id="" [(ngModel)] = "newtext">
       </div>
     </div>
   </div>

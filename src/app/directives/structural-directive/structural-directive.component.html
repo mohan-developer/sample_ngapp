@@ -1,0 +1,12 @@
+<div class="structural-directive">
+    <h2 class="text-center text-black-50 mb-2">Structural Directive</h2>
+    <p class="text-center">Structural directives are responsible for HTML layout. They shape or reshape the DOM's structure, typically by adding, removing, and manipulating the host elements to which they are attached.</p>
+    <h3 class="text-black-50 mb-0">NgIf</h3>
+    <p class="pt-2">- conditionally add or remove an element from the DOM</p>
+    <div *ngIf ="currentstatus">
+      Hello {{currentHero.name}}
+    </div>
+    <div *ngIf ="!currentstatus">
+        Hello {{currentHero.number}}
+      </div>
+  </div>

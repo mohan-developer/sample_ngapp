@@ -1,0 +1,18 @@
+<div class="attribute-directive">
+    <h2 class="text-center text-black-50 mb-3">Attribute Directive</h2>
+    <h3 class="text-black-50 mb-0">NgClass</h3>
+    <p class="pt-2">- add and remove a set of CSS classes</p>
+    <div [ngClass]="{'choose':directive, 'letters':!directive}">
+      NgClass
+    </div>
+    <button class="btn btn-success my-3" (click) = "classToggle()">Class Add & Remove</button>
+    <h3 class="text-black-50 mb-0">NgStyle</h3>
+    <p class="pt-2">- add and remove a set of HTML styles</p>
+    <div [ngStyle]="directive?inlineStyle:''">
+      NgStyle
+    </div>
+    <h3 class="text-black-50 mb-0 mt-3">NgModel</h3>
+    <p class="pt-2">- two-way data binding to an HTML form element</p>
+    <input type="text" [(ngModel)]='input'>
+    {{input}}
+</div>

@@ -7,3 +7,26 @@ a:hover,
 .btn,
 .btn:hover {transition: all 0.25s ease; -webkit-transition: all 0.25s ease; -moz-transition: all 0.25s ease; -ms-transition: all 0.25s ease;}
 ul {margin: 0; padding:  0;}
+p {color: #74757f;
+    font-weight: 300;
+    padding-top: 20px;}
+
+.choose {
+    background-color: aquamarine;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.letters {
+    background-color: rgb(76, 104, 95);
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}

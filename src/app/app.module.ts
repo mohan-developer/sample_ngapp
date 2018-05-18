@@ -8,6 +8,15 @@ import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
 import { PriceComponent } from './price/price.component';
 import { ServiceInfoComponent } from './services/service-info/service-info.component';
+import {FormsModule} from '@angular/forms';
+import { BindingComponent } from './binding/binding.component';
+import { AttributeBindingComponent } from './binding/attribute-binding/attribute-binding.component';
+import { PropertyBindingComponent } from './binding/property-binding/property-binding.component';
+import { StyleBindingComponent } from './binding/style-binding/style-binding.component';
+import { ClassBindingComponent } from './binding/class-binding/class-binding.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { AttributeDirectiveComponent } from './directives/attribute-directive/attribute-directive.component';
+import { StructuralDirectiveComponent } from './directives/structural-directive/structural-directive.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +26,19 @@ import { ServiceInfoComponent } from './services/service-info/service-info.compo
     FooterComponent,
     ServicesComponent,
     PriceComponent,
-    ServiceInfoComponent
+    ServiceInfoComponent,
+    BindingComponent,
+    AttributeBindingComponent,
+    PropertyBindingComponent,
+    StyleBindingComponent,
+    ClassBindingComponent,
+    DirectivesComponent,
+    AttributeDirectiveComponent,
+    StructuralDirectiveComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,11 @@
+<div class="style-binding text-center">
+  <h2 class="text-center text-black-50 mb-3 pt-5">Style Binding</h2>
+  <p>You can set inline styles with a style binding</p>
+  <p class="pb-2">Style binding syntax resembles property binding. Instead of an element property between brackets, start with the prefix style, followed by a dot (.) and the name of a CSS style property: <strong>[style.style-property]</strong>.</p>
+  <button [style.color]="isColor ? 'red': 'green'" (click)="styleToggle('color')">Red</button>
+  <button class="ml-3" [style.background-color]="isBg ? 'yellow': 'green'" (click)="styleToggle('bg')">Save</button>
+  <br>
+  <br>
+  <button [style.font-size.em]="isEmfont ? 3 : 1" (click)="styleToggle('fontEm')">Big</button>
+  <button class="ml-3" [style.font-size.%]="isPerfont ? 150 : 50" (click)="styleToggle('fontPer')">Small</button>
+</div>

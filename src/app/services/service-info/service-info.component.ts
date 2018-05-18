@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceInfoComponent implements OnInit {
 
+  Name = 'Something';
+  newtext = 0;
   constructor() { }
 
   ngOnInit() {
   }
+
+  BtnEvent(inputVal){
+    this.Name = inputVal;
+  }
+  addevent(val){
+    this.Name = val.target.value;
+  }
+ 
 
 }

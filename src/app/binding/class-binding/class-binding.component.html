@@ -1,0 +1,9 @@
+<div class="class-binding text-center">
+  <h2 class="text-center text-black-50 mb-3 pt-5">Class Binding</h2>
+  <p class="mb-0">You can add or remove CSS class from an elements <strong>class</strong> attribute with a class binding</p>
+  <p class="pb-2">Class binding syntax resembles property binding. Instead of an element property between brackets, start with the prefix class, optionally followed by a dot (.) and the name of a CSS class: <strong>[class.class-name]</strong>.</p>
+  <div [class.choose] = "classBinding">
+    {{ className }}
+  </div>
+  <button class="btn btn-info mt-3" (click) = "switchingCalss()">ToggleClass</button>
+</div>
