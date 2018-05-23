@@ -17,6 +17,9 @@ import { ClassBindingComponent } from './binding/class-binding/class-binding.com
 import { DirectivesComponent } from './directives/directives.component';
 import { AttributeDirectiveComponent } from './directives/attribute-directive/attribute-directive.component';
 import { StructuralDirectiveComponent } from './directives/structural-directive/structural-directive.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { ParentToChildComponent } from './heroes/parent-to-child/parent-to-child.component';
+import { ChildToParentComponent } from './heroes/child-to-parent/child-to-parent.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { StructuralDirectiveComponent } from './directives/structural-directive/
     ClassBindingComponent,
     DirectivesComponent,
     AttributeDirectiveComponent,
-    StructuralDirectiveComponent
+    StructuralDirectiveComponent,
+    HeroesComponent,
+    ParentToChildComponent,
+    ChildToParentComponent
   ],
   imports: [
     BrowserModule,

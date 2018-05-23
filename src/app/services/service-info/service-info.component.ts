@@ -9,6 +9,7 @@ export class ServiceInfoComponent implements OnInit {
 
   Name = 'Something';
   newtext = 0;
+  siteUrl = window.location.href;
   constructor() { }
 
   ngOnInit() {

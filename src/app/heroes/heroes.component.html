@@ -1,0 +1,57 @@
+<section class="heroes-block">
+  <div class="container">
+    <h2 class="text-black-50 display-4 mb-5 text-center">{{title}}</h2>
+    <div class="row">
+      <div class="col-sm-6">
+          <h3 class="text-black-50 mb-5 text-center">My Heroes List</h3>
+          <ul class="heroes">
+            <li *ngFor="let hero of heroes"
+              [class.selected]="hero === selectedHero"
+              (click)="onSelect(hero)">
+              <span class="badge">{{hero.id}}</span> 
+              {{hero.name}}
+            </li>
+          </ul>
+    
+          <div *ngIf="selectedHero">
+            <h2>{{ selectedHero.name | uppercase }} Details</h2>
+            <div><span>id: </span>{{selectedHero.id}}</div>
+            <div>
+              <label>name:
+                <input [(ngModel)]="selectedHero.name" placeholder="name">
+              </label>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm-6">
+          <h3 class="text-black-50 mb-5 text-center">NgFor</h3>
+        <ul class="pb-4">
+          <li *ngFor = "let f of fruits"> {{ f }} </li>
+        </ul>
+        <div *ngFor = "let car of cars;let i = index">
+          {{i+1}} {{ car.name +""+ car.color }}
+        </div>
+        
+      </div>
+    </div>
+
+    <h2 class="text-black-50 my-5 text-center">Component Interaction</h2>
+    <div class="row">
+      <div class="col-sm-6">
+        <app-parent-to-child 
+        [subcontent] = "subject"
+        [innercontent] = "maintitle"
+        >
+      </app-parent-to-child>
+      </div>
+      <div class="col-sm-6">
+        <app-child-to-parent
+        (formaction) = "actioncalled($event)">
+        </app-child-to-parent>
+        {{formComp}}
+      </div>
+    </div>
+
+  </div>
+</section>
+

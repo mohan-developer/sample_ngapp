@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AttributeDirectiveComponent implements OnInit {
   directive = true;
   inlineStyle = {
-    padding: '20px',
-    backgroundColor: '#ffaacc',
+    'padding': '20px',
+    'backgroundColor': '#ffaacc',
     'text-align': 'center',
     'font-size': '28px'
   }

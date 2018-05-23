@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyBindingComponent implements OnInit {
   Box = 'TrileoContact';
+  myId = 'testid';
   myColor = {
     backgroundColor: '#ffaacc',
     color: '#fff',

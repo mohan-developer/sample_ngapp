@@ -8,5 +8,10 @@
     </div>
     <div *ngIf ="!currentstatus">
         Hello {{currentHero.number}}
-      </div>
+    </div>
+
+    <ul>
+      <li *ngFor="let newdate of dates" [innerHTML]="formatMyDate(newdate.mydate, newdate.author)"></li>
+    </ul>
+
   </div>

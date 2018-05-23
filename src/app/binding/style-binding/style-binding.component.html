@@ -7,5 +7,11 @@
   <br>
   <br>
   <button [style.font-size.em]="isEmfont ? 3 : 1" (click)="styleToggle('fontEm')">Big</button>
-  <button class="ml-3" [style.font-size.%]="isPerfont ? 150 : 50" (click)="styleToggle('fontPer')">Small</button>
+  <button class="ml-3" [style.font-size.%]="isPerfont ? 150 : 50" (click)="styleToggle('fontPer')">Small</button> <br>
+  <button class="btn btn-inverse my-5" [style.font-size]="isSpecial ? 'x-large' : 'smaller'" (click)="styleToggle('size')">
+    This div is x-large or smaller.
+  </button>
+  <div [ngStyle]="currentStyles">
+    This div is initially italic, normal weight, and extra small (24px).
+  </div>
 </div>

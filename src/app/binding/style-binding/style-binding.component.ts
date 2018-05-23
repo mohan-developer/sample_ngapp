@@ -10,6 +10,13 @@ export class StyleBindingComponent implements OnInit {
   isBg = true;
   isEmfont = true;
   isPerfont = true;
+  isSpecial = true;
+
+  currentStyles = {
+    'font-style' : 'italic',
+    'font-size' : '14px',
+    'font-weight' : 'normal'
+  };
 
   constructor() { }
 
@@ -44,6 +51,12 @@ export class StyleBindingComponent implements OnInit {
       }
       else{
         this.isPerfont = true;
+      }
+    }else if(val === 'size'){
+      if(this.isSpecial == true){
+        this.isSpecial = false;
+      }else {
+        this.isSpecial = true;
       }
     }
    

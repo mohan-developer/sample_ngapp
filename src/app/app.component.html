@@ -1,7 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-header></app-header>
 <app-banner></app-banner>
-<app-price></app-price>
+<app-price [submit] = "newTitle"></app-price>
 <app-services></app-services>
 <app-directives></app-directives>
+<app-heroes (userCall) = "trigger($event)">   
+</app-heroes>
+
 <app-footer></app-footer>
