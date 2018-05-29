@@ -2,3 +2,4 @@
 .header-menu ul {margin: 0;}
 .header-menu ul li {display: inline-flex; display: -webkit-inline-flex; display: -ms-inline-flexbox; margin: 0 0 0 30px;}
 .header-menu ul li a {color: #ffaacc; font-family: 400; text-transform: uppercase; text-decoration: none; cursor: pointer;}
+a.active {color: #28a745 !important;}

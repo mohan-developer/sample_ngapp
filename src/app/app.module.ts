@@ -20,6 +20,18 @@ import { StructuralDirectiveComponent } from './directives/structural-directive/
 import { HeroesComponent } from './heroes/heroes.component';
 import { ParentToChildComponent } from './heroes/parent-to-child/parent-to-child.component';
 import { ChildToParentComponent } from './heroes/child-to-parent/child-to-parent.component';
+import { Route } from '@angular/compiler/src/core';
+import { directiveCreate } from '@angular/core/src/render3/instructions';
+import {RouterModule, Routes} from '@angular/router';
+
+const routes: Routes = [
+  { path : '', component : HeaderComponent},
+  { path : 'banner', component : BannerComponent},
+  { path : 'price', component : PriceComponent},
+  { path : 'services', component : ServicesComponent},
+  { path : 'directives', component : DirectivesComponent},
+  { path : 'heroes', component : HeroesComponent}
+];
 
 @NgModule({
   declarations: [
@@ -44,7 +56,8 @@ import { ChildToParentComponent } from './heroes/child-to-parent/child-to-parent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes,{enableTracing:true})
   ],
   providers: [],
   bootstrap: [AppComponent]

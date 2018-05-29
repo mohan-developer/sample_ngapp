@@ -6,12 +6,24 @@
           </div>
           <div class="header-menu ml-auto">
             <ul class="list-unstyled">
-              <li><a href="">Home</a></li>
-              <li><a href="">banner</a></li>
-              <li><a href="">price</a></li>
-              <li><a href="">services</a></li>
-              <li><a href="">directives</a></li>
-              <li><a href="">heroes</a></li>
+              <li>
+                <a routerLink= "/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+              </li>
+              <li>
+                <a routerLink= "/banner" routerLinkActive="active">banner</a>
+              </li>
+              <li>
+                <a routerLink= "/price" routerLinkActive="active">price</a>
+              </li>
+              <li>
+                <a routerLink= "/services" routerLinkActive="active">services</a>
+              </li>
+              <li>
+                <a routerLink= "/directives" routerLinkActive="active">directives</a>
+              </li>
+              <li>
+                <a routerLink= "/heroes" routerLinkActive="active">heroes</a>
+              </li>
             </ul>
           </div>
     </div>
