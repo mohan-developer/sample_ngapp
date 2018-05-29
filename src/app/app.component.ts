@@ -7,7 +7,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  newTitle = "PriceComponent";
+  newtitle = "PriceComponent";
 
   newComponent = "";
   trigger(value){

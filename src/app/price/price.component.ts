@@ -8,7 +8,7 @@ import { Input } from '@angular/core';
   styleUrls: ['./price.component.css']
 })
 export class PriceComponent implements OnInit {
-  @Input('submit') newTitle : string;
+  @Input('submit') newtitle : string;
 
   constructor() { }
 
