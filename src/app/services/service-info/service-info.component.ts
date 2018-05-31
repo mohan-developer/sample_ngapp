@@ -21,6 +21,8 @@ export class ServiceInfoComponent implements OnInit {
   addevent(val){
     this.Name = val.target.value;
   }
- 
+  addtc(){
+    document.write("hello");
+  }
 
 }

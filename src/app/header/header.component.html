@@ -15,8 +15,15 @@
               <li>
                 <a routerLink= "/price" routerLinkActive="active">price</a>
               </li>
-              <li>
-                <a routerLink= "/services" routerLinkActive="active">services</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" routerLink="/services" routerLinkActive="active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" routerLink="/services/service1">service1</a>
+                  <a class="dropdown-item" routerLink="/services/service2">service2</a>
+                  <a class="dropdown-item" routerLink="/services/service3">service3</a>
+                </div>
               </li>
               <li>
                 <a routerLink= "/directives" routerLinkActive="active">directives</a>
