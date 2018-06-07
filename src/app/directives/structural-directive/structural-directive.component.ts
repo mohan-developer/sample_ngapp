@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NewserviceService } from '../../newservice.service';
+import { validateConfig } from '@angular/router/src/config';
 
 @Component({
   selector: 'app-structural-directive',
@@ -7,13 +9,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StructuralDirectiveComponent implements OnInit {
   currentstatus = false;
+  Serviceval ="";
+  mycar = "";
+  carslist = [];
+
   currentHero = {
     name : 'mohan',
     number: 555
   }
 
-  constructor() { }
+  constructor(private myservice: NewserviceService){
+    this.myservice.newVal = this.myservice.newVal +"Website";
+     this.Serviceval = this.myservice.newVal;      
+  }
 
+  getResults(val){
+    this.myservice.getResult(val);
+  }
+
+  getCarName(val){
+    this.mycar = val.target.value;
+  }
+
+  getCarsList(){
+    this.myservice.cars.push(this.mycar);
+    this.carslist = this.myservice.cars;
+    console.log(this.carslist);
+  }
   ngOnInit() {
   }
 
@@ -39,5 +61,29 @@ getSuffix(dat){
     let a = new Date(d);
    return this.months[a.getMonth()]+' <strong>'+this.getSuffix(a.getDate())+'</strong> '+a.getFullYear() + author;
   }
+
+   
+  Records = [
+    {
+      name : 'mohan',
+      online : true
+    },
+    {
+      name : 'Balu',
+      online : false
+    },
+    {
+      name : 'Sumanth',
+      online : true
+    },
+    {
+      name : 'Balu',
+      online : false
+    },
+    {
+      name : 'Sumanth',
+      online : true
+    }
+  ]
 
 }

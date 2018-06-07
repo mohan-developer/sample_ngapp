@@ -13,5 +13,29 @@
     <ul>
       <li *ngFor="let newdate of dates" [innerHTML]="formatMyDate(newdate.mydate, newdate.author)"></li>
     </ul>
-
+    <table class="mt-4">
+      <tr>
+        <td>S.No</td>
+        <td><strong>Name:</strong></td>
+        <td><strong>Is Online?</strong></td>
+      </tr>
+      <tr *ngFor="let record of Records;let i = index; let firstRecord = first; let lastRecord = last; let evenRecord = even; let oddRecord = odd;" [ngClass]="{even: evenRecord, odd:oddRecord, first:firstRecord, last:lastRecord}">
+        <td>{{i+1}}</td>
+        <td>{{record.name}}</td>
+        <td>{{record.online}}</td>
+      </tr>
+    </table>
+    <h2 class="text-center text-black-50 mb-2">SERVICES</h2>
+    <input type="text" (input)=getResults($event)>
+    {{ Serviceval }}
+    <br>
+    <br>
+    <input type="text" (input)=getCarName($event)><br><br>
+    
+    <button class="btn btn-secondary" (click)=getCarsList()>Add Car</button>
+    <ul>
+      <li *ngFor = "let cname of carslist">
+        {{cname}}
+      </li>
+    </ul>
   </div>
